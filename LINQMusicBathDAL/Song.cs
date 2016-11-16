@@ -14,6 +14,8 @@ namespace LINQMusicBathDAL
     
     public partial class Song
     {
+        internal string SongName;
+
         public string Name { get; set; }
         public string Author { get; set; }
         public string Album { get; set; }
@@ -21,5 +23,6 @@ namespace LINQMusicBathDAL
         public string Mood { get; set; }
         public string Type { get; set; }
         public int SongID { get; set; }
+        public byte[] RowVersion { get; set; }
     }
 }

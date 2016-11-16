@@ -1,0 +1,14 @@
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\obj\Debug\LINQMusicBathService.csprojResolveAssemblyReference.cache
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\LINQMusicBathService.dll.config
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\LINQMusicBathService.dll
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\LINQMusicBathService.pdb
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\LINQMusicBathBDO.dll
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\LINQMusicBathLogic.dll
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\LINQMusicBathDAL.dll
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\EntityFramework.dll
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\LINQMusicBathBDO.pdb
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\LINQMusicBathLogic.pdb
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\LINQMusicBathDAL.pdb
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\EntityFramework.xml
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\obj\Debug\LINQMusicBathService.dll
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\obj\Debug\LINQMusicBathService.pdb

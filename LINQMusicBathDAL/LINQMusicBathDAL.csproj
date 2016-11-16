@@ -98,6 +98,12 @@
       <LastGenOutput>MusicBath.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LINQMusicBathBDO\LINQMusicBathBDO.csproj">
+      <Project>{0949ef84-780b-4f21-ad0f-f53a33a4377c}</Project>
+      <Name>LINQMusicBathBDO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -14,17 +14,56 @@ namespace LINQMusicBathDAL
             SongBDO songBDO = null;
             using (var MBEntities = new MusicBathEntities())
             {
-                Song product = (from s in MBEntities.Songs
-                                   where s.SongID == id
-                                   select s).FirstOrDefault();
-                if (product != null)
+                Song song = (from s in MBEntities.Song
+                             where s.SongID == id
+                             select s).FirstOrDefault();
+                if (song != null)
                     songBDO = new SongBDO()
                     {
-                        SongID = product.SongID,
-                        SongName = product.SongName,
+                        SongID = song.SongID,
+                        SongName = song.SongName,
+                        RowVersion = song.RowVersion
                     };
             }
             return songBDO;
+        }
+
+        public bool UpdateSong(
+    ref SongBDO songBDO,
+    ref string message)
+        {
+            message = "song updated successfully";
+            bool ret = true;
+            using (var MBEntities = new MusicBathEntities())
+            {
+                var songID = songBDO.SongID;
+                Song songInDB =
+                (from s
+                in MBEntities.Song
+                 where s.SongID == songID
+                 select s).FirstOrDefault();
+                // check songg
+                if (songInDB == null)
+                {
+                    throw new Exception("No song with ID " +
+                    songBDO.SongID);
+                }
+                MBEntities.Song.Remove(songInDB);
+                // update song
+                songInDB.SongName = songBDO.SongName;
+                songInDB.RowVersion = songBDO.RowVersion;
+                MBEntities.Song.Attach(songInDB);
+                MBEntities.Entry(songInDB).State =
+                System.Data.Entity.EntityState.Modified;
+                int num = MBEntities.SaveChanges();
+                songBDO.RowVersion = songInDB.RowVersion;
+                if (num != 1)
+                {
+                    ret = false;
+                    message = "no song is updated";
+                }
+            }
+            return ret;
         }
     }
 }
