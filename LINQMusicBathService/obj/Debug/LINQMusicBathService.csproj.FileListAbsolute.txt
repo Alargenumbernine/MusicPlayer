@@ -12,3 +12,5 @@ C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBath
 C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\EntityFramework.xml
 C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\obj\Debug\LINQMusicBathService.dll
 C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\obj\Debug\LINQMusicBathService.pdb
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alper\Documents\Visual Studio 2015\Projects\LINQMusicBath\LINQMusicBathService\bin\Debug\EntityFramework.SqlServer.xml

@@ -78,7 +78,7 @@ SongBDO songBDO,
 Song song)
         {
             song.SongID = songBDO.SongID;
-            song.SongName = songBDO.SongName;
+            song.SongName = songBDO.Name;
             song.RowVersion = songBDO.RowVersion;
         }
         private void TranslateSongDTOToSongBDO(
@@ -86,7 +86,7 @@ Song song)
         SongBDO songBDO)
         {
             songBDO.SongID = song.SongID;
-            songBDO.SongName = song.SongName;
+            songBDO.Name = song.SongName;
             songBDO.RowVersion = song.RowVersion;
         }
     }

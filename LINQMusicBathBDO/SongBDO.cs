@@ -9,7 +9,7 @@ namespace LINQMusicBathBDO
     public class SongBDO
     {
         public int SongID { get; set; }
-        public string SongName { get; set; }
+        public string Name { get; set; }
         public byte[] RowVersion { get; set; }
     }
 }

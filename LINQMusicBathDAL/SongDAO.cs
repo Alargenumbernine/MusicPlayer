@@ -21,7 +21,7 @@ namespace LINQMusicBathDAL
                     songBDO = new SongBDO()
                     {
                         SongID = song.SongID,
-                        SongName = song.SongName,
+                        Name = song.Name,
                         RowVersion = song.RowVersion
                     };
             }
@@ -50,7 +50,7 @@ namespace LINQMusicBathDAL
                 }
                 MBEntities.Song.Remove(songInDB);
                 // update song
-                songInDB.SongName = songBDO.SongName;
+                songInDB.Name = songBDO.Name;
                 songInDB.RowVersion = songBDO.RowVersion;
                 MBEntities.Song.Attach(songInDB);
                 MBEntities.Entry(songInDB).State =

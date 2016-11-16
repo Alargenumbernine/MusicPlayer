@@ -1,0 +1,8 @@
+C:\Users\Alper\documents\visual studio 2015\Projects\LINQMusicBath\LINQMusicBathClient\bin\Debug\LINQMusicBathClient.exe.config
+C:\Users\Alper\documents\visual studio 2015\Projects\LINQMusicBath\LINQMusicBathClient\bin\Debug\LINQMusicBathClient.exe
+C:\Users\Alper\documents\visual studio 2015\Projects\LINQMusicBath\LINQMusicBathClient\bin\Debug\LINQMusicBathClient.pdb
+C:\Users\Alper\documents\visual studio 2015\Projects\LINQMusicBath\LINQMusicBathClient\obj\Debug\LINQMusicBathClient.csprojResolveAssemblyReference.cache
+C:\Users\Alper\documents\visual studio 2015\Projects\LINQMusicBath\LINQMusicBathClient\obj\Debug\LINQMusicBathClient.Properties.Resources.resources
+C:\Users\Alper\documents\visual studio 2015\Projects\LINQMusicBath\LINQMusicBathClient\obj\Debug\LINQMusicBathClient.csproj.GenerateResource.Cache
+C:\Users\Alper\documents\visual studio 2015\Projects\LINQMusicBath\LINQMusicBathClient\obj\Debug\LINQMusicBathClient.exe
+C:\Users\Alper\documents\visual studio 2015\Projects\LINQMusicBath\LINQMusicBathClient\obj\Debug\LINQMusicBathClient.pdb
