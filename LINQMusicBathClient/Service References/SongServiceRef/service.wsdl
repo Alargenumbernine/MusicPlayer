@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SongService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/LINQMusicBathService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISongService_GetSong_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSong" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetSong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSongResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetSong_SongFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/LINQMusicBathService" name="detail" element="q1:SongFault" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_UpdateSong_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSong" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_UpdateSong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSongResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_UpdateSong_SongFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/LINQMusicBathService" name="detail" element="q2:SongFault" />
+  </wsdl:message>
+  <wsdl:portType name="ISongService">
+    <wsdl:operation name="GetSong">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISongService/GetSong" message="tns:ISongService_GetSong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISongService/GetSongResponse" message="tns:ISongService_GetSong_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISongService/GetSongSongFaultFault" name="SongFaultFault" message="tns:ISongService_GetSong_SongFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSong">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISongService/UpdateSong" message="tns:ISongService_UpdateSong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISongService/UpdateSongResponse" message="tns:ISongService_UpdateSong_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISongService/UpdateSongSongFaultFault" name="SongFaultFault" message="tns:ISongService_UpdateSong_SongFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISongService" type="tns:ISongService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSong">
+      <soap:operation soapAction="http://tempuri.org/ISongService/GetSong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SongFaultFault">
+        <soap:fault use="literal" name="SongFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSong">
+      <soap:operation soapAction="http://tempuri.org/ISongService/UpdateSong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SongFaultFault">
+        <soap:fault use="literal" name="SongFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SongService">
+    <wsdl:port name="BasicHttpBinding_ISongService" binding="tns:BasicHttpBinding_ISongService">
+      <soap:address location="http://localhost:8080/LINQMusicBathService/SongService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
